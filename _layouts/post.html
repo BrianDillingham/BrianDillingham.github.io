@@ -9,6 +9,10 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="tags">
+    Tagged with {{ page.categories | join: ', ' }}
+  </div>
+
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
